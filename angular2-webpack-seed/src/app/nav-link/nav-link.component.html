@@ -1,0 +1,8 @@
+<ul class="icon-list">
+  <li *ngFor="let linkItem of navLInkItems">
+     <a md-button routerLink="{{linkItem.url}}" >
+        <md-icon>{{linkItem.icon}}</md-icon>
+       {{linkItem.iconText}}
+      </a>
+  </li>
+</ul>

@@ -1,0 +1,8 @@
+.lora-logo {
+  position: relative;
+  top:18px;
+}
+md-toolbar.toolbar-items {
+  position: fixed;
+  z-index: 100;
+}

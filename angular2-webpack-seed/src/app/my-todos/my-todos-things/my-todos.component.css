@@ -1,0 +1,16 @@
+.todoFormCard {
+  margin: auto;
+  width: 50%;
+}
+#formTodoBtn {
+  float: right;
+  position: relative;
+  top: -58px;
+  right: -2px;
+  color: #fff;
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+
+    

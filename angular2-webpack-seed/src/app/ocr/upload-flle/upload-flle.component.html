@@ -1,0 +1,6 @@
+<p>
+  Please select the image file :
+   <button md-button (click)="fileInput.click()">
+     <md-icon>file_upload</md-icon>Upload image</button>
+   <input type="file" id="file-input" #fileInput (change)="uploadFile(fileInput.files)">
+</p>

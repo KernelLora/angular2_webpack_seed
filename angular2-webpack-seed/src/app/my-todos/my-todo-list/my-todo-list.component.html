@@ -1,0 +1,11 @@
+<md-list >
+
+  <md-list-item [ngClass]="{'strike-off' :strikeClass['strike' +itemIndex]}" class="todo-item" *ngFor="let todoItem of todoListArray; let itemIndex = index">
+    <span md-line> {{ todoItem.todoItemTask }}</span>
+    <div dir="rtl" class="list-item-icons">
+      <span (click)="deleteTodoItem($event, itemIndex)" class="delete-icon">  <md-icon  >check</md-icon></span>
+      <span class="edit-icon">  <md-icon  >edit</md-icon></span>
+      
+    </div>
+  </md-list-item>
+</md-list>

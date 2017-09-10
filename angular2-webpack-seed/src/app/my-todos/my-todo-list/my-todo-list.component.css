@@ -1,0 +1,15 @@
+.list-item-icons{
+  display: inherit;
+}
+.edit-icon, .delete-icon{
+  padding: 15px;
+}
+
+.edit-icon md-icon, .delete-icon md-icon{
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.strike-off{
+  text-decoration: line-through;
+}

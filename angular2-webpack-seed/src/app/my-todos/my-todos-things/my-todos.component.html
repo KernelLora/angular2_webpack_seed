@@ -1,0 +1,22 @@
+<md-card class="todoFormCard">
+  <form (ngSubmit)="onSubmit()" [formGroup]="todoform">
+
+    <div *ngFor="let item of todoItem" class="form-row">
+      <app-my-todo-control [addItem]="item" [form]="todoform"></app-my-todo-control>
+        
+    </div>
+ <button id="formTodoBtn" type="submit" md-mini-fab [disabled]="!todoform.valid"> <md-icon>add</md-icon></button>
+
+  </form>
+
+  <div *ngIf="payLoad" class="form-row">
+    <strong>Saved the following values</strong><br>{{payLoad}}
+  </div>
+  <div *ngIf="todoItemArrayList.length">
+    <h3> TODO List</h3>
+      <app-my-todo-list [todoListArray]="todoItemArrayList" >
+          </app-my-todo-list>
+  </div>
+
+
+</md-card>

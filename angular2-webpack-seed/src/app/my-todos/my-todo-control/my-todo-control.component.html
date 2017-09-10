@@ -1,0 +1,7 @@
+<div [formGroup]="form">
+    <md-input-container class="todo-control-full-width" >
+      <input  mdInput [id]="addItem.key" placeholder="{{addItem.label}}"  [formControlName]="addItem.key" >
+    <span class="errorMessage err-msg" [ngClass] ="isValid ? 'err-hide': 'err-show'" *ngIf="!isValid">{{addItem.label}} is required</span>
+    </md-input-container>
+  
+  </div>
